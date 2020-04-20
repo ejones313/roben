@@ -1,4 +1,8 @@
-# Script to run standard training + attack in CodaLab
+#!/bin/bash
+# Script to run defense
+# Possible tasks are RTE, MRPC, SST-2, QNLI, MNLI, QQP
+
+echo 'Running defense for task: $1...'
 
 # Activate at-env conda environment
 source activate atenv
@@ -7,7 +11,7 @@ pip install query
 # conda list
 
 # Set required environment variables
-export TASK_NAME=MRPC
+export TASK_NAME=$1
 export CLUSTERER_PATH=$HOME/run-bash/clusterers/vocab100000_ed1.pkl
 export GLUE_DIR=$HOME/data/glue_data
 
