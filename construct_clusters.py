@@ -15,7 +15,6 @@ import networkx as nx
 from edit_dist_utils import get_all_edit_dist_one, get_sorted_word
 from preprocess_vocab import preprocess_neighbors, preprocess_neighbors_intprm
 from utils import pkl_load, pkl_save
-from generators import penn_treebank_generator, stanford_treebank_generator
 
 
 RELATIVE_GLOVE_PATH = 'glove/glove.6B.50d.txt'
