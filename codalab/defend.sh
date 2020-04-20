@@ -2,7 +2,7 @@
 # Script to run defense
 # Possible tasks are RTE, MRPC, SST-2, QNLI, MNLI, QQP
 
-echo 'Running defense for task: $1...'
+echo 'Running defense for task: '$1
 
 # Activate at-env conda environment
 source activate atenv
@@ -15,8 +15,8 @@ export TASK_NAME=$1
 export CLUSTERER_PATH=$HOME/run-bash/clusterers/vocab100000_ed1.pkl
 export GLUE_DIR=$HOME/data/glue_data
 
-# Needed for CodaLab as typo-embeddings is mounted one level down
-cd typo-embeddings || exit 1
+# Needed for CodaLab as roben is mounted one level down
+cd roben || exit 1
 
 # Clusters as defense
 echo 'Defending...'

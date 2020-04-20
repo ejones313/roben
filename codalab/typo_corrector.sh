@@ -2,7 +2,7 @@
 # Script to run typo corrector training
 # Possible tasks are RTE, MRPC, SST-2, QNLI, MNLI, QQP
 
-echo 'Running typo corrector training for task: $1...'
+echo 'Running typo corrector training for task: '$1
 
 # Activate at-env conda environment
 source activate atenv
@@ -20,8 +20,8 @@ export TC_DIR=$HOME/tc_data
 mkdir $TC_DIR
 mkdir $TC_DIR/glue_tc_preprocessed
 
-# Needed for CodaLab as typo-embeddings is mounted one level down
-cd typo-embeddings || exit 1
+# Needed for CodaLab as roben is mounted one level down
+cd roben || exit 1
 
 # Store preprocessed data, vocabularies, and models
 echo 'Storing preprocessed data, vocabularies, and models...'

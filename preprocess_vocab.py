@@ -5,7 +5,6 @@ from collections import defaultdict
 from tqdm import tqdm
 
 from utils import pkl_save, pkl_load
-from old_language_model import load_language_model
 from edit_dist_utils import get_all_edit_dist_one, get_all_internal_permutations, get_sorted_word
 
 TOY_VOCAB = ['cat', 'bat', 'car', 'bar', 'airplane!!!']

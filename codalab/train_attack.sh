@@ -2,7 +2,7 @@
 # Script to run typo corrector training
 # Possible tasks are RTE, MRPC, SST-2, QNLI, MNLI, QQP
 
-echo 'Running traing and attack for task: $1...'
+echo 'Running traing and attack for task: '$1
 
 # Activate at-env conda environment
 source activate atenv
@@ -14,6 +14,9 @@ export TASK_NAME=$1
 export CLUSTERER_PATH=$HOME/clusterers/vocab100000_ed1.pkl
 export GLUE_DIR=$HOME/data/glue_data
 export TC_DIR=$HOME/tc_data
+
+# Needed for CodaLab as roben is mounted one level down
+cd roben || exit 1
 
 # Train and Attack
 echo 'Training and then attacking...'
