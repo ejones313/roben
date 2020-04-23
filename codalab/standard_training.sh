@@ -1,4 +1,8 @@
-# Script to run standard training + attack in CodaLab
+#!/bin/bash
+# # Script to run standard training + attack in CodaLab
+# Possible tasks are RTE, MRPC, SST-2, QNLI, MNLI, QQP
+
+echo 'Running standard training + attack for task: '$1
 
 # Activate at-env conda environment
 source activate atenv
@@ -6,11 +10,11 @@ source activate atenv
 pip install query
 # conda list
 
-# Needed for CodaLab as typo-embeddings is mounted one level down
-cd typo-embeddings || exit 1
+# Needed for CodaLab as roben is mounted one level down
+cd roben || exit 1
 
 # Set required environment variables
-export TASK_NAME=MRPC
+export TASK_NAME=$1
 export CLUSTERER_PATH=$HOME/clusterers/vocab100000_ed1.pkl
 export GLUE_DIR=$HOME/data/glue_data
 
