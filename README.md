@@ -1,6 +1,8 @@
 Code for the following paper:
 > [Robust Encodings: A Framework for Combating Adversarial Typos](https://github.com/ejones313/roben/edit/master/README.md)
+>
 > Erik Jones, Robin Jia, Aditi Raghunathan, and Percy Liang
+>
 > Association for Computational Linguistics (ACL), 2020
 
 ## Cluster Embeddings
