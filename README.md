@@ -1,3 +1,8 @@
+Code for the following paper:
+> [Robust Encodings: A Framework for Combating Adversarial Typos](https://github.com/ejones313/roben/edit/master/README.md)
+> Erik Jones, Robin Jia, Aditi Raghunathan, and Percy Liang
+> Association for Computational Linguistics (ACL), 2020
+
 ## Cluster Embeddings
 We will run experiments for six tasks: RTE, MRPC, SST-2, QNLI, MNLI, QQP. These are used as arguments whenever task name (or mrpc in the following code, which is used as an example) comes up. Data is available on codalab.
 ### Standard training 
