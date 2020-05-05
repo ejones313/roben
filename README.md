@@ -1,5 +1,5 @@
 Code for the following paper:
-> [Robust Encodings: A Framework for Combating Adversarial Typos](https://github.com/ejones313/roben/edit/master/README.md)
+> [Robust Encodings: A Framework for Combating Adversarial Typos](https://arxiv.org/abs/2005.01229)
 >
 > Erik Jones, Robin Jia, Aditi Raghunathan, and Percy Liang
 >
